@@ -1,0 +1,43 @@
+<view class="shopstore">
+  <view class="shopstore_log">
+    <text style="padding-left:30rpx">帖子名称</text>
+    <input value="{{name}}" placeholder-class='placeholder' placeholder-style='font-size:26rpx;padding-top: 0.8%' placeholder='请输入帖子名称' class="in" bindinput="name" />
+  </view>
+</view>
+<view class="tishi">
+  <text style="margin-right:20rpx; color: {{colorName}}">请输入帖子名称</text>
+</view>
+<view class="shopstore">
+  <view class="shopstore_log">
+    <text style="padding-left:30rpx">帖子主题</text>
+    <text class="in" style="font-size: {{typeFontSize}}rpx;color: {{typeColor}};padding-top: 0.8%" bindtap="selectType">{{typeMsg}}</text>
+  </view>
+</view>
+<view class="tishi">
+  <text style="margin-right:20rpx; color: {{colorName}}">请选择帖子主题</text>
+</view>
+
+<view class="section">
+  <textarea value="{{message}}" bindinput="message" maxlength="-1" placeholder="请输入内容" auto-focus />
+</view>
+
+<view class="con">
+  <text class="title">上传照片</text>
+  <view class="flex-row img_list">
+    <block wx:for="{{imgList}}" wx:key="index">
+      <view class="item_img">
+        <image src="{{item}}" class="img_item" mode="aspectFill" catchtap="previewImg" data-src="{{item}}"></image>
+        <image src="/images/close1.png" class="close" catchtap="deleteUpload" data-index="{{index}} "></image>
+      </view>
+    </block>
+    <view class="item_img1 flex-column" catchtap="chooseImg" wx:if="{{show}}">
+      <image src="/images/add.png" class="add_img" mode="aspectFill"></image>
+      <text>{{imgList.length}}/{{maxPhoto}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="button-panel2">
+  <view class="button2" hover-class="button-hover" bindtap="publish">发布帖子
+  </view>
+</view>

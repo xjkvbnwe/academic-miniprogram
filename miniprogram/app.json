@@ -1,0 +1,73 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/information/notify/notify",
+        "pages/information/information",
+        "pages/information/message/message",
+        "pages/timetable/timetable",
+        "pages/mine/mine",
+        "pages/functionPage/register/register",
+        "pages/functionPage/money/money",
+        "pages/functionPage/studentApply/studentApply",
+        "pages/functionPage/score/score",
+        "pages/functionPage/selectCourse/course",
+        "pages/functionPage/resume/resume",
+        "pages/functionPage/health/health",
+        "pages/mine/sign/sign",
+        "pages/mine/sign/function/signFunction",
+        "pages/functionPage/schoolCode/schoolCode",
+        "pages/information/publish/publish",
+        "pages/mine/authentication/authentication",
+        "pages/mine/userFace/userFace",
+        "pages/functionPage/pubnishSign/pubnishSign",
+        "pages/functionPage/studentGet/studentGet"
+    ],
+    "permission": {
+        "scope.userLocation": {
+            "desc": "您的位置信息将用于小程序签到"
+        }
+    },
+    "requiredPrivateInfos": [
+        "getLocation"
+    ],
+    "window": {
+        "backgroundColor": "#F6F6F6",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#1E90FF",
+        "navigationBarTitleText": "西瓜大学—学工系统",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#7A7E83",
+        "selectedColor": "#13227a",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "text": "主页",
+                "iconPath": "images/main2.png",
+                "selectedIconPath": "images/main1.png"
+            },
+            {
+                "pagePath": "pages/information/information",
+                "text": "动态",
+                "iconPath": "images/info1.png",
+                "selectedIconPath": "images/info2.png"
+            },
+            {
+                "pagePath": "pages/timetable/timetable",
+                "text": "课表",
+                "iconPath": "images/table1.png",
+                "selectedIconPath": "images/table2.png"
+            },
+            {
+                "pagePath": "pages/mine/mine",
+                "text": "个人",
+                "iconPath": "images/mine1.png",
+                "selectedIconPath": "images/mine2.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json",
+    "style": "v2"
+}

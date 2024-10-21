@@ -1,0 +1,16 @@
+<!--wxml-->
+<view class="guide" wx:if="{{showGuide}}">
+  <view style="{{guideStyle}}" class="guide-box">
+    <view class="tips guide-step-tips" style="{{tipPosition}}">
+      <view class="text">{{ guideList[index].tips }}</view>
+      <view class="tool-btn">
+        <text bind:tap="skip">跳过</text>
+        <view class="next" bind:tap="next">下一步</view>
+      </view>
+    </view>
+    <view class="arrow" style="{{arrowTop}}"></view>
+  </view>
+  <!-- 遮罩层，防止点击 -->
+  <view class="v-model"></view>
+</view>
+

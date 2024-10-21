@@ -1,0 +1,30 @@
+<view data-weui-theme="{{theme}}">
+  <button class="avatar-wrapper" open-type="chooseAvatar" bindchooseavatar="onChooseAvatar">
+    <image class="avatar" 
+    src="{{avatarUrl}}"></image>
+  </button> 
+</view>
+
+<view class="shopstore">
+	<view class="shopstore_log">
+		<text style="padding-left:30rpx">姓名</text>
+		<input type="nickname" disabled="true" value="{{name}}" placeholder-class='placeholder' placeholder-style='font-size:26rpx;padding-top: 0.8%' placeholder='学工系统姓名' class="in" bindinput="name" />
+	</view>
+</view>
+<view class="tishi">
+	<text style="margin-right:20rpx; color: rgb(156, 154, 154);">学工系统姓名，若需修改请联系管理员</text>
+</view>
+<view class="shopstore">
+	<view class="shopstore_log">
+		<text style="padding-left:30rpx">手机号</text>
+		<input value="{{ID}}" disabled="true" placeholder-class='placeholder' placeholder-style='font-size:26rpx;padding-top: 0.8%' placeholder='学工系统手机号' class="in" bindinput="id" />
+	</view>
+</view>
+<view class="tishi">
+	<text style="margin-right:20rpx; color: rgb(156, 154, 154);">学工系统手机号，若需修改请联系管理员</text>
+</view>
+
+<view class="button-panel2">
+	<view class="button2" hover-class="button-hover" bindtap="authentication">立即注册
+	</view>
+</view>

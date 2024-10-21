@@ -1,0 +1,22 @@
+.cover_bg {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.cover_face {
+	width: 100%;
+	height: 32vh;
+	position: absolute;
+	bottom: 0;
+	background-color: #FFFFFF;
+	color: #333;
+	font-size: 36rpx;
+	font-weight: bold;
+}
+
+.cover_text {
+	letter-spacing: 2rpx;
+	text-align: center;
+	margin-top: 24%;
+}

@@ -1,0 +1,86 @@
+<view class="bg">
+	<view class="money" style="text-align: center; width: 10vw;">
+		年级
+		<view>2021</view>
+	</view>
+	<view class="topimg-view">
+		<image class="topimg" src="{{img}}"></image>
+	</view>
+	<view class="borrowbook" style="text-align: center;">昵称
+		<view style="text-align: center;">{{nickName}}</view>
+	</view>
+</view>
+
+<view class="hr"></view>
+<view class="item flex-row" hover-class="hover" bindtap="scan">
+	<image style="padding-left: 3%;" src="../../images/scan.png" class="nv_icon" />
+	<view class="title">扫一扫</view>
+	<view class="detail2">
+		<text> ></text>
+	</view>
+</view>
+<view class="line"></view>
+<view class="item flex-row" hover-class="hover" bindtap="courseClick">
+	<image style="padding-left: 3%;" src="../../images/course.png" class="nv_icon" />
+	<view class="title">自主选课</view>
+	<view class="detail2">
+		<text>{{authentication}} ></text>
+	</view>
+</view>
+<view class="line"></view>
+<view class='item flex-row' hover-class="hover" bindtap="userSign">
+  <image style="padding-left: 3%;" src="../../images/exam.png" class="nv_icon" />
+	<view class="title">课程签到</view>
+	<view class="detail2">
+		<text> ></text>
+	</view>
+</view>
+<view class="line"></view>
+<view class="item flex-row" hover-class="hover" bindtap="pubnishSign">
+	<image style="padding-left: 3%;" src="../../images/signLogo.png" class="nv_icon" />
+	<view class="title">签到发布</view>
+	<view class="detail2">
+		<text> ></text>
+	</view>
+</view>
+<view class="line"></view>
+<view class='item flex-row' hover-class="hover" bindtap="healthClick">
+	<image style="padding-left: 3%;" src="../../images/health.png" class="nv_icon" />
+	<view class="title">健康预约</view>
+	<view class="detail2">
+		<text> ></text>
+	</view>
+</view>
+<view class="line"></view>
+<view class="item flex-row" hover-class="hover" bindtap="cardClick">
+	<image style="padding-left: 3%;" src="../../images/kehu.png" class="nv_icon" />
+	<view class="title">学生证领取</view>
+	<view class="detail2">
+		<text> ></text>
+	</view>
+</view>
+<view class="line"></view>
+<view class="item flex-row" hover-class="hover" bindtap="examClick">
+	<image style="padding-left: 3%;" src="../../images/result.png" class="nv_icon" />
+	<view class="title">成绩查询</view>
+	<view class="detail2">
+		<text> ></text>
+	</view>
+</view>
+<view class="line"></view>
+<view class="item flex-row" hover-class="hover" bindtap="moneyClick">
+	<image style="padding-left: 3%;" src="../../images/caiwu.png" class="nv_icon" />
+	<view class="title">财务系统</view>
+	<view class="detail2">
+		<text> ></text>
+	</view>
+</view>
+<view class="line"></view>
+<view class="item flex-row" hover-class="hover" bindtap="bindClick">
+	<image style="padding-left: 3%;" src="../../images/bind.png" class="nv_icon" />
+	<view class="title">身份绑定</view>
+	<view class="detail2">
+		<text> ></text>
+	</view>
+</view>
+<view class="line"></view>

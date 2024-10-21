@@ -1,0 +1,20 @@
+<view class="card">
+  <view class="t_box">
+    <view class="top">
+      <view class="title" bindtap="selectStatistics">
+        <span></span>
+        <text>用户消费二维码</text>
+        <span></span>
+      </view>
+      <view class="tips">
+      </view>
+    </view>
+  </view>
+  <view class="b_box">
+    <view class="container" style="padding-top: 8%;">
+      <text style="padding-bottom: 5%; color: rgb(116, 116, 116);">{{nickName}}</text>
+      <canvas id='qrcode' type="2d" style='width:460rpx;height:460rpx;margin-top: 5%;text-align: center;' ></canvas>
+      <text style="padding-top: 3%; color: rgb(116, 116, 116);">手机号：{{phone}}</text>
+    </view>
+  </view>
+</view>

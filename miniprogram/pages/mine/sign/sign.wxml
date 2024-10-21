@@ -1,0 +1,20 @@
+<block wx:for="{{courseList}}" wx:key="course">
+  <view class="c_item" style="margin-top: 3%;box-shadow:2px 5px 10px rgb(196, 196, 196)" bindtap="clickSign" data-index="{{index}}">
+    <view class="flex-row j_b">
+      <view class="flex">
+        <view class="user_name text_ellipsis">{{item.name}}</view>
+      </view>
+    </view>
+    <view class="flex-row j_b item_time">
+        <view style="padding-right: 5%;">任课教师：{{item.teacher}}</view>
+    </view>
+    <view class="flex-row j_b">
+      <view style="width: 100vw;">
+        <text style="padding-right: 5%;">截止时间：{{item.endDate}}</text>
+      </view>
+    </view>
+  </view>
+</block>
+<view class="flex-column">
+  <text class="guide_no_txt" style="padding-top: 5%;">数据到底啦~</text>
+</view>

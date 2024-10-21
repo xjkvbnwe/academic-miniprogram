@@ -1,0 +1,1 @@
+<web-view src="http://cloudide-a3a14e8e827-e41be04dc9-605079.cloudide.kingdee.com/ierp/accessTokenLogin.do?access_token={{access_token}}&redirect=http://cloudide-a3a14e8e827-e41be04dc9-605079.cloudide.kingdee.com/ierp/mobile.html?#/form/ozwe_registration_mob"></web-view>

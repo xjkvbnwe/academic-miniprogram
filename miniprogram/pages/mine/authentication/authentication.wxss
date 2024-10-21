@@ -1,0 +1,126 @@
+page {
+	background-color: rgb(248, 248, 248);
+}
+
+.avatar-wrapper {
+  padding: 0;
+  width: 56px !important;
+  border-radius: 8px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.avatar {
+  display: block;
+  width: 56px;
+  height: 56px;
+}
+
+.container {
+  display: flex;
+}
+
+
+.shopstore {
+	display: flex;
+	width: 100%;
+	background: #fff;
+	padding: 20rpx 0;
+	font-size: 32rpx;
+}
+
+.shopstore_log {
+	width: 100%;
+	display: flex;
+}
+
+.shopstore_log2 {
+	width: 100%;
+	display: flex;
+}
+
+.button1-panel {
+	padding-right: 1%;
+	display: flex;
+	position: relative;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.button1 {
+	height: 30px;
+	width: 28vw;
+	color: white;
+	border-radius: 5px;
+}
+
+.button-panel2 {
+	padding-top: 5%;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-bottom: 5%;
+	display: flex;
+	text-align: center;
+}
+
+.button2 {
+	padding-top: 5px;
+	height: 30px;
+	width: 100vw;
+	color: white;
+	background: rgb(4, 100, 245);
+	border-radius: 5px;
+}
+
+.button-hover {
+	background-color: rgb(59, 133, 245);
+}
+
+.in {
+	width: 70%;
+	padding-left: 30rpx;
+	font-family: "微软雅黑";
+}
+
+.tishi {
+	width: 100%;
+	font-size: 26rpx;
+	text-align: right;
+	padding: 20rpx 0;
+	color: #999;
+	padding-right: 10rpx;
+}
+
+.section {
+	background: #fff
+}
+
+.xian {
+	width: 90%;
+	background: #ccc;
+	height: 2rpx;
+}
+
+.jieshang {
+	margin-left: 30rpx;
+	padding: 20rpx 0;
+	font-size: 32rpx;
+}
+
+.xian {
+	margin-left: 25rpx;
+	margin-bottom: 20rpx;
+}
+
+textarea {
+	width: 100%;
+	margin-left: 20rpx;
+}
+
+.lable {
+	border-radius: 8px;
+	width: 20vw;
+	text-align: center;
+	font-size: 15px;
+}

@@ -1,0 +1,13 @@
+<view wx:if="{{signType == '2'}}">
+  <view class="text-sign">请输入签到码</view>
+  <view class="input-panel">
+    <input class="input" name="Usekey" placeholder="请输入签到码" bindinput="signText">
+    </input>
+  </view>
+</view>
+
+<view wx:if="{{signType == '1'}}">
+  <map id="map" longitude="{{userLongitude}}" latitude="{{userLatitude}}" style="width: 100%; height: 800rpx;" show-location></map>
+  <button style="margin-top: 20%;" class="button" hover-class="button-hover" bindtap="click">立即签到
+  </button>
+</view>

@@ -1,0 +1,1 @@
+"D:\微信web开发者工具\cli.bat" cloud functions deploy --e bookmanage-8gtw1zmo8e08a73a --n quickstartFunctions --r --project "D:\项目作品\比赛项目\国赛\软件杯2023\微信小程序" --report_first --report

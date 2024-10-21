@@ -1,0 +1,120 @@
+page {
+    background-color: #1E90FF;
+  
+  }
+  
+  .card {
+    width: 683rpx;
+    border-radius: 40rpx;
+    box-sizing: border-box;
+    margin: 40px auto;
+  }
+  
+  .top {
+    box-sizing: border-box;
+    padding-top: 40rpx;
+    padding-bottom: 40rpx;
+    border-bottom: 1px dashed #66a8fe;
+    position: relative;
+  }
+  
+  .page-section-spacing {
+    margin-top: 60rpx;
+  }
+  
+  .scroll-view_H {
+    white-space: nowrap;
+  }
+  
+  .scroll-view-item {
+    height: 300rpx;
+  }
+  
+  .scroll-view-item_H {
+    display: inline-block;
+    width: 100%;
+    height: 300rpx;
+  }
+  
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .title text {
+    font-size: 30rpx;
+    font-weight: bold;
+    color: #2699f7;
+    padding: 0 13rpx 0 20rpx;
+  }
+  
+  .title span {
+    width: 21rpx;
+    height: 21rpx;
+    background: #5997f5;
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  .title span::after {
+    content: '';
+    position: absolute;
+    width: 14rpx;
+    height: 14rpx;
+    background: rgba(51, 185, 247, 0.58);
+    border-radius: 50%;
+    bottom: 0;
+    right: -7rpx;
+  }
+  
+  .bottom {
+    height: 200px;
+  }
+  
+  .t_box {
+    border-radius: 40rpx 40rpx 0 0;
+    background-size: 70% 100%;
+    background-image: radial-gradient(circle at 100% 100%,
+        transparent 0,
+        transparent 11px,
+        #fff 11px),
+      radial-gradient(circle at 0 100%,
+        transparent 0,
+        transparent 11px,
+        #fff 11px);
+    background-repeat: no-repeat;
+    background-position: right bottom, left bottom;
+  }
+  
+  .b_box {
+    border-radius: 0 0 40rpx 40rpx;
+    background-size: 70% 100%;
+    background-image: radial-gradient(circle at 0 0,
+        transparent 0,
+        transparent 11px,
+        #fff 11px),
+      radial-gradient(circle at 100% 0,
+        transparent 0,
+        transparent 11px,
+        #fff 11px);
+    background-repeat: no-repeat;
+    background-position: left top, right top;
+  }
+  
+  .container {
+    text-align: center;
+    width: 100%;
+    height: 53vh;
+  }
+  
+  
+  .container2{
+    width: 100%;
+    margin-bottom: 80rpx;
+    margin-top: 10rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }

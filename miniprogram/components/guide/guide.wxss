@@ -1,0 +1,67 @@
+/* wxss */
+.v-model {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+.guide {
+  z-index: 1001;
+}
+.guide-box {
+  position: absolute;
+  z-index: 10001;
+  transition: all 0.2s;
+  
+}
+.guide-box::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  border: 1px dashed #fff;
+  border-radius: 8rpx;
+  position: absolute;
+  top: -8rpx;
+  left: -8rpx;
+  padding: 7rpx;
+}
+.arrow {
+  height: 20rpx;
+  width: 20rpx;
+  background: #f7d309;
+  position: absolute;
+  top: 144rpx;
+  left: 45%;
+  transform: rotate(45deg);
+}
+.tips {
+  width: 400rpx;
+  background: linear-gradient(180deg, #ec9d0b, #ff9900);
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  position: absolute;
+  top: 152rpx;
+  left: -50%;
+  padding: 15rpx 20rpx;
+  font-size: 28rpx;
+  border-radius: 12rpx;
+}
+.tool-btn {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-right: 0rpx;
+   margin-top: 20rpx;
+}
+.next {
+   background: #fff;
+   height: 48rpx;
+   width: 100rpx;
+   text-align: center;
+   border-radius: 8rpx;
+   color: #666;
+   line-height: 48rpx;
+   font-size: 24rpx
+}

@@ -1,0 +1,61 @@
+<view class="swiper">
+  <view class="swiper-view" style="height: 30vh;">
+    <swiper class="swiper-panel" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item bindtap="swiperClick" data-item="{{item.info}}">
+          <image src="{{item.url}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>
+<view class="band_box flex-row" style="text-align: center;padding-top: 8%;">
+  <swiper class="swiper_band" indicator-dots="{{lists.length>1?true:false}}" autoplay="{{false}}">
+    <swiper-item wx:for="{{lists}}" wx:key="index" wx:for-index="index1">
+      <view class="flex-row flex-wrap">
+        <block wx:for="{{item}}" wx:key="item" wx:for-item="item0">
+          <view class="flex-column band_item" bindtap="menuClick" data-index1="{{index1}}" data-index="{{index}}">
+            <image src="{{item0.icon}}" class="band_icon" />
+            <view style="padding-top: 8%;font-weight: 400;">{{item0.name}}</view>
+          </view>
+        </block>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
+
+<!-- <guide step="{{step}}"></guide> -->
+
+
+<view class="borrow-view" style="margin-bottom: 5%;">
+  <view class="borrow-top">
+    新闻公告
+  </view>
+</view>
+
+<view wx:for="{{notifyList}}">
+  <view bindtap="clickNotify" data-index="{{index}}">
+    <view class="notify_content">
+      <text>{{item.content}}</text>
+    </view>
+    <view class="notify_content" style="text-align: right;">
+      <text>{{item.date}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="page__bd">
+  <view class="weui-panel weui-panel_access">
+    <view class="weui-panel__bd" wx:for="{{shopsInput}}" wx:for-item="shops" wx:key="*item">
+      <view class="weui-media-box weui-media-box_appmsg" data-item="{{shops.item}}">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <image class="weui-media-box__thumb" mode="widthFix" src="{{shops.img}}" sytle="height:auto"></image>
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">{{shops.name}}</view>
+          <view class="weui-media-box__desc" style="color: rgb(172, 169, 169)">{{shops.desc}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

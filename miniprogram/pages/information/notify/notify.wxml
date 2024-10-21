@@ -1,0 +1,13 @@
+<view class="container">
+    <text class='title'>{{name}}</text>
+    <view class='author-date' style="margin-top: 2%;">
+        <view class='author-box' bindtap="clickAvatar" data-userId="{{userId}}">
+            <image class='avatar' src='../../../images/logoImg.png'></image>
+            <text class='author'>西瓜大学</text>
+        </view>
+        <text class='date'>{{date}}</text>
+    </view>
+    <view class='detail' style="margin-top: 5%;margin-bottom: 5%;">
+        <rich-text class="information-detail" nodes="{{content}}"></rich-text>
+    </view>
+</view>

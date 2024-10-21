@@ -1,0 +1,13 @@
+<view class="">
+	<camera wx-if="{{showcamera}}" device-position="front" resolution="high" style="width: 100vw; height: 100vw;border-radius: 50%;">
+	</camera>
+	<view class="cover_text" style="font-size: 6vw;font-weight: 1000;">{{tipsText}}</view>
+	<!-- <cover-view class="cover_bg">
+				<cover-view class="cover_face" :style="{{bgcolor}}">
+					<cover-view class="cover_text" bindtap="click">{{tipsText}}</cover-view>
+				</cover-view>
+			</cover-view> -->
+	<view class="photo_img" v-else>
+		<image :src="tempImg" mode=""></image>
+	</view>
+</view>
